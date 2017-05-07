@@ -5,13 +5,13 @@ Planned Features in no specific order:
 1. Google-like Search bar
 2. Free-Form listing
 3. Categories Filtering
-4. AI recomendation engine for similar listing
+4. AI recommendation engine for similar listing
 5. Safe for work results Filtering
 6. Barter Trading *inspired by on red paperclip*
-7. Transaction Facilitator
+7. Transaction Facilitator *Intelligent Facilitator for both paid and barter trading*
 
 Administrative Functions:
-1. Lister Dashboard
+1. Lister/User Dashboard
 2. Social Login/Login and Authentication
 3.
 
