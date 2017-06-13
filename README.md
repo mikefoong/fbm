@@ -18,6 +18,3 @@ Administrative Functions:
 ### Progress
 1. Create a skeleton on windows
 2. Migrate to Digital Ocean for Compatibility test
-
-## 201707May+652134 - Testing Atom and Git Integration
-See if this works
