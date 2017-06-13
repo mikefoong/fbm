@@ -27,7 +27,8 @@ Setup from scratch on Digital Ocean with Ubuntu 16.04.02.
 
    `sudo service ssh restart`
 
-## Install python3
+## 1. Install python3
+https://www.digitalocean.com/community/tutorials/how-to-install-python-3-and-set-up-a-local-programming-environment-on-ubuntu-16-04
 1. `$ sudo apt-get update`
 2. `$ sudo apt-get -y upgrade`
 3.  Check the version of python `python3 -V` 
@@ -38,11 +39,11 @@ Setup from scratch on Digital Ocean with Ubuntu 16.04.02.
 5. Install other development environment tools
 
    `$ sudo apt-get install build-essential libssl-dev libffi-dev python-dev`
-6. Install Python Virtua Environment
+6. Install Python Virtual Environment
 
    `$ sudo apt-get install -y python3-venv`
 
-## Install mongodb
+## 2. Install mongodb
 1. Add MongoDB Repo
 
    `sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 0C49F3730359A14518585931BC711F9BA15703C6`
@@ -65,11 +66,43 @@ Setup from scratch on Digital Ocean with Ubuntu 16.04.02.
 ### Securing MongDB
 1. Adding Administrative User
 - `$ mongo`
-- > use admin
+> use admin
 > db.createUser(
 >  {
->    user: "mongoAdmin",
->    pwd: "mongoadminpwd",
+>    user: "Mongo Admin",
+>    pwd: "Mongo Admin Password",
 >    roles: [ { role: "userAdminAnyDatabase", db: "admin" } ]
 >  }
 >)
+2. Enabling Authentication
+- `$ sudo nano /etc/mongod.conf`
+- Edit the security section:
+> . . .
+> security:
+>  authorization: "enabled"
+> . . . 
+- restart mongod
+
+   `$ sudo systemctl restart mongod`
+ 
+ 3. Verifying admin user access
+ 
+    '$ mongo -u <Mongo Admin Username> -p --authenticationDatabase admin'
+
+## 3. Install PyMongo
+1. Install with pip
+
+   `$ pip3 install pymongo`
+
+## 4. Install Flask
+1. Create a virtual environment
+
+   `$ python3 -m venv fbm`
+2. Activate virtual environment
+
+   '$ source fbm/bin/activate'
+3. Install Flask
+
+   'pip install Flask'
+   
+** Image Droplet **
