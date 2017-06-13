@@ -1,7 +1,7 @@
-#Setup Documentation
+# Setup Documentation
 Setup from scratch on Digital Ocean with Ubuntu 16.04.02.
 
-##Initial Setup
+## Initial Setup
 1. Create a droplet on Digital Ocean
 2. Logon using PuTTY
 3. Default root password is in the email
