@@ -8,6 +8,6 @@ Setup from scratch on Digital Ocean with Ubuntu 16.04.02.
 4. Required to change password upon first login
 - login as root with the default password
 - prompt sequence:
-*Initial Password
-*New Password
+- - *Initial Password*
+New Password
 *Repeat New Password
