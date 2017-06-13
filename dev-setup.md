@@ -13,4 +13,14 @@ Setup from scratch on Digital Ocean with Ubuntu 16.04.02.
  - Repeat New Password
 5. Create a new user
 
-   ```adduser newuser```
+   `# adduser newuser`
+- add a password
+- add other information
+6. Add sudo capabilities for `newuser`
+
+   `# usermod -aG sudo newuser`
+7. Disable remote ssh login for root
+- add the line below to the `/etc/ssh/ssh_config` file
+  `PermitRootLogin no`
+8.
+   
