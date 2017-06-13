@@ -21,6 +21,7 @@ Setup from scratch on Digital Ocean with Ubuntu 16.04.02.
    `# usermod -aG sudo newuser`
 7. Disable remote ssh login for root
 - add the line below to the `/etc/ssh/ssh_config` file
+
   `PermitRootLogin no`
 8.
    
