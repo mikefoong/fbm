@@ -44,6 +44,7 @@ https://www.digitalocean.com/community/tutorials/how-to-install-python-3-and-set
    `$ sudo apt-get install -y python3-venv`
 
 ## 2. Install mongodb
+https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-mongodb-on-ubuntu-16-04
 1. Add MongoDB Repo
 
    `sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 0C49F3730359A14518585931BC711F9BA15703C6`
@@ -89,6 +90,13 @@ https://www.digitalocean.com/community/tutorials/how-to-install-python-3-and-set
  
     '$ mongo -u <Mongo Admin Username> -p --authenticationDatabase admin'
 
+ 4. Show users in mongo
+ in mongo
+     
+     '$ mongo -u <mongouser> -p --authenticationDatase admin'
+     '> use admin'
+     '> db.system.users.find()'
+     
 ## 3. Install PyMongo
 1. Install with pip
 
