@@ -11,6 +11,7 @@ Setup from scratch on Digital Ocean with Ubuntu 16.04.02.
  - Initial Password
  - New Password
  - Repeat New Password
+ - install DO-agents - curl -sSL https://agent.digitalocean.com/install.sh | sh
 5. Create a new user
 
    `# adduser newuser`
